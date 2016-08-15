@@ -46,6 +46,33 @@ function takeScreenshot(){
       };
     }
   });
+};
+
+function logStuff() {
+  console.log("windows", overwolf.windows);
+  console.log("streaming", overwolf.streaming);
+  console.log("settings ", overwolf.settings );
+  console.log("games", overwolf.games);
+  console.log("media", overwolf.media);
+  console.log("extensions", overwolf.extensions);
+  console.log("profile", overwolf.profile);
+  console.log("utils", overwolf.utils);
+  console.log("benchmarking", overwolf.benchmarking);
+  console.log("io", overwolf.io);
+  console.log("web", overwolf.web);
+  console.log("logitech", overwolf.logitech);
+  console.log("version", overwolf.version);
+};
+
+function currentTime() {
+  var timestamp = new Date();
+  console.log(timestamp);
+};
+
+function getLanguage() {
+ var lang =  overwolf.settings.getCurrentOverwolfLanguage(console.log());
+ console.log(lang);
+ currentTime();
 }
 
 function runTeamSpeak(){
