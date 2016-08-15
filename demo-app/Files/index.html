@@ -10,16 +10,21 @@
 
 <body>
 	<div class="outer_wrapper" onmousedown="dragMove();">
+		
 		<div class="window_header">
-			<h2 class="window_header_text">This is my App!</h2>
-			<h3>I'm going to make it awesome!</h3>
+			<a href="#" id="window_close" onclick="closeWindow();">&times</a>
+			<h1 class="window_header_text">THIS IS MY APP</h1>
+			<h2>I'm going to make it awesome</h2>
 		</div>
 		<p class="body_p">The window is draggable and repositionable</p>
-		<button id="close" onclick="closeWindow();">Close</button>
-		<!-- <button id="run-teamspeak" onclick="runTeamSpeak();">Run TeamSpeak</button> -->
-		<button onclick="logStuff();">Log Stuff</button>
-		<button onclick="getLanguage();">language</button>
-		<!-- <button id="open-subwindow" onclick="openSubWindow();">Open Sub-Window</button> -->
+		<div class="button_row">
+
+			<button id="close" class="buttons" onclick="closeWindow();">Close</button>
+			<!-- <button id="run-teamspeak" onclick="runTeamSpeak();">Run TeamSpeak</button> -->
+			<button class="buttons" onclick="logStuff();">Log Stuff</button>
+			<button class="buttons" onclick="getLanguage();">language</button>
+			<!-- <button id="open-subwindow" onclick="openSubWindow();">Open Sub-Window</button> -->
+		</div>
 		<!-- <img id="screenshot" width="300px"></img> -->
 	</div>
 </body>

@@ -50,7 +50,8 @@ function takeScreenshot(){
 
 function logStuff() {
   console.log("windows", overwolf.windows);
-  console.log("streaming", overwolf.streaming);
+  // streaming requires the streaming permission.
+  // console.log("streaming", overwolf.streaming);
   console.log("settings ", overwolf.settings );
   console.log("games", overwolf.games);
   console.log("media", overwolf.media);
@@ -73,6 +74,7 @@ function getLanguage() {
  var lang =  overwolf.settings.getCurrentOverwolfLanguage(console.log());
  console.log(lang);
  currentTime();
+ overwolf.games.getGameInfo();
 }
 
 function runTeamSpeak(){
