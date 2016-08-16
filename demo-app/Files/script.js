@@ -75,6 +75,7 @@ function getLanguage() {
  console.log(lang);
  currentTime();
  overwolf.games.getGameInfo();
+ overwolf.logitech.getDevices();
 }
 
 function runTeamSpeak(){
